@@ -5,4 +5,15 @@ The program lets users enter their package's shipping ID which will them be in t
 
 Current Version: 1.0 
 
-Currently, Working Modules: None
+Currently, Working Modules: 
+    ADMIN:
+        Add Users To Database
+        Print Database
+    USER:
+        Print Database
+
+Future Plans: You can see the flowchart of the operation of the application 
+here which outline the actual logic of the finished application. 
+https://drive.google.com/file/d/1U5QZrHwHr9EpqeFrKSpog2azsyq1Uaaa/view?usp=sharing
+
+Thank you for your interest in ShipperStatusPlus.
