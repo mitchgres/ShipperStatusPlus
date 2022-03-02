@@ -17,7 +17,7 @@ try:
             office_location text
             )""")
 except:
-    print("File 'employee_information' Continuing w/ Program Execution")
+    print("File 'employee_information' Already Exists Continuing w/ Program Execution")
 def employee_submit():
     """
     Again Only Used By Admins & Adds A New Entry To The Database
