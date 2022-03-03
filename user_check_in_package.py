@@ -3,7 +3,7 @@ import sqlite3
 from PIL import ImageTk, Image
 
 root_widget_user_check_in_package = Tk()
-root_widget_user_check_in_package.title("ShipperStatusPlus - Admin User Selection Screen")
+root_widget_user_check_in_package.title("ShipperStatusPlus - User Package Check-In Screen")
 root_widget_user_check_in_package.iconbitmap("logo_icon_ssp.ico")
 root_widget_user_check_in_package.geometry()
 
