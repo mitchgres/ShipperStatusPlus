@@ -11,7 +11,7 @@ root_widget_user_add_new_package.geometry()
 def pop_up_to_confirm():
     messagebox_respon = messagebox.askyesno("ShipperStatusPlus - Add User To Database Question", "Are you sure that you want to add this package to the database?")
     if messagebox_respon == 0:
-        messagebox.showwarning("ShipperStatusPlus - Redirecting Back To Menu", "You are being returned to the selection window.")
+        messagebox.showwarning("ShipperStatusPlus - Redirecting Back To Menu", "You are being returned to the user selection window.")
 
 admin_user_new_package_frame = Frame(root_widget_user_add_new_package, padx=30, pady=30, background="#31117A")
 admin_user_new_package_frame.pack(fill=BOTH, expand=YES)
