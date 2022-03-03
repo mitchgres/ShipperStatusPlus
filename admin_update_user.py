@@ -3,21 +3,21 @@ import sqlite3
 from PIL import ImageTk, Image
 from tkinter import messagebox
 
-root_widget_login = Tk()
-root_widget_login.title("ShipperStatusPlus - Admin User Information Update Screen")
-root_widget_login.iconbitmap("logo_icon_ssp.ico")
-root_widget_login.geometry()
+root_widget_admin_update_user = Tk()
+root_widget_admin_update_user.title("ShipperStatusPlus - Admin User Information Update Screen")
+root_widget_admin_update_user.iconbitmap("logo_icon_ssp.ico")
+root_widget_admin_update_user.geometry()
 
-admin_user_edit_frame = Frame(root_widget_login, padx=30, pady=30, background="#31117A")
-admin_user_edit_frame.pack(fill=BOTH, expand=YES)
-text_box_frame = Frame(admin_user_edit_frame, padx=10, pady=7, background="#31117A")
+admin_user_update_frame = Frame(root_widget_admin_update_user, padx=30, pady=30, background="#31117A")
+admin_user_update_frame.pack(fill=BOTH, expand=YES)
+text_box_frame = Frame(admin_user_update_frame, padx=10, pady=7, background="#31117A")
 text_box_frame.grid(row=2, column=0, rowspan=4)
 
 logo_image_init = Image.open("logo_picture_200_ssp.png")
 image_resized = logo_image_init.resize((50, 50))
 logo_image = ImageTk.PhotoImage(image_resized)
-logo_image_label = Label(admin_user_edit_frame, image=logo_image)
-title_label = Label(admin_user_edit_frame, text="Admin User Information Update", font='Helvetica 18 bold',
+logo_image_label = Label(admin_user_update_frame, image=logo_image)
+title_label = Label(admin_user_update_frame, text="Admin User Information Update", font='Helvetica 18 bold',
                     background="#31117A", foreground="#f2f2f2")
 logo_image_label.grid(row=0, columnspan=2, column=0)
 
@@ -58,7 +58,7 @@ def query_database_for_id():
     update_user_id_entry.insert(0, "CURRENT USER ID PLACEHOLDER")
     update_user_loc_entry.insert(0, "CURRENT OFFICE LOCATION PLACEHOLDER")
     check_user_database_button.destroy()
-    update_user_database_button = Button(admin_user_edit_frame, padx=35, pady=0, text="Push To Database",
+    update_user_database_button = Button(admin_user_update_frame, padx=35, pady=0, text="Push To Database",
                                          background="#f2f2f2", command=pop_up_to_confirm)
     update_user_database_button.grid(row=7, column=0, columnspan=2, pady=20)
 
@@ -71,7 +71,7 @@ update_user_last_name_entry.grid(row=3, column=1)
 update_user_id_entry.grid(row=4, column=1)
 update_user_loc_entry.grid(row=5, column=1)
 
-check_user_database_button = Button(admin_user_edit_frame, padx=35, pady=0, text="Search Database",
+check_user_database_button = Button(admin_user_update_frame, padx=35, pady=0, text="Search Database",
                                     background="#f2f2f2", command=query_database_for_id)
 check_user_database_button.grid(row=7, column=0, columnspan=2, pady=20)
-root_widget_login.mainloop()
+root_widget_admin_update_user.mainloop()

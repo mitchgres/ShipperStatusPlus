@@ -2,12 +2,12 @@ from tkinter import *
 import sqlite3
 from PIL import ImageTk, Image
 
-root_widget_login = Tk()
-root_widget_login.title("ShipperStatusPlus - User Selection Screen")
-root_widget_login.iconbitmap("logo_icon_ssp.ico")
-root_widget_login.geometry()
+root_widget_user_selection = Tk()
+root_widget_user_selection.title("ShipperStatusPlus - User Selection Screen")
+root_widget_user_selection.iconbitmap("logo_icon_ssp.ico")
+root_widget_user_selection.geometry()
 
-user_selection_frame = Frame(root_widget_login, padx=30, pady=30, background="#31117A")
+user_selection_frame = Frame(root_widget_user_selection, padx=30, pady=30, background="#31117A")
 user_selection_frame.pack(fill=BOTH, expand=YES)
 
 logo_image_init = Image.open("logo_picture_200_ssp.png")
@@ -39,4 +39,4 @@ add_new_package_radio.grid(row=6, column=0)
 exit_application_radio.grid(row=7, column=0)
 submit_button.grid(row=8, column=0, pady=15)
 
-root_widget_login.mainloop()
+root_widget_user_selection.mainloop()
