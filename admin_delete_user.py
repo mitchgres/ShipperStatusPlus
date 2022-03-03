@@ -3,12 +3,12 @@ import sqlite3
 from PIL import ImageTk, Image
 from tkinter import messagebox
 
-root_widget = Tk()
-root_widget.title("ShipperStatusPlus - Admin User Information Delete Screen")
-root_widget.iconbitmap("logo_icon_ssp.ico")
-root_widget.geometry()
+root_widget_delete_user = Tk()
+root_widget_delete_user.title("ShipperStatusPlus - Admin User Information Delete Screen")
+root_widget_delete_user.iconbitmap("logo_icon_ssp.ico")
+root_widget_delete_user.geometry()
 
-admin_user_delete_frame = Frame(root_widget, padx=30, pady=30, background="#31117A")
+admin_user_delete_frame = Frame(root_widget_delete_user, padx=30, pady=30, background="#31117A")
 admin_user_delete_frame.pack(fill=BOTH, expand=YES)
 text_box_frame = Frame(admin_user_delete_frame, padx=10, pady=7, background="#31117A")
 text_box_frame.grid(row=2, column=0, rowspan=4)
@@ -37,4 +37,4 @@ delete_user_id_entry.grid(row=1, column=1)
 delete_user_database_button = Button(admin_user_delete_frame, padx=35, pady=0, text="Delete User Profile",
                                     background="#f2f2f2", command=pop_up_to_confirm)
 delete_user_database_button.grid(row=7, column=0, columnspan=2, pady=20)
-root_widget.mainloop()
+root_widget_delete_user.mainloop()
