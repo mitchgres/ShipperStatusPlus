@@ -28,7 +28,7 @@ TOPPINGS = [
 """
 EXAMPLE_DATABASE_REPLY = [
     ("#5376765", "02/13/2022", "Arrived"),
-    ("#9786087", "02/15/2022", "In Inventory"),
+    ("#9786087", "02/15/2022", "In Inventory (A6)"),
     ("#4543578", "03/17/2022", "Not Arrived")
 ]
 
