@@ -1,6 +1,7 @@
 from tkinter import *
 import sqlite3
 from PIL import ImageTk, Image
+from tkinter import messagebox
 
 root_widget_login = Tk()
 root_widget_login.title("ShipperStatusPlus - Admin User Information Update Screen")
@@ -57,9 +58,11 @@ def query_database_for_id():
     update_user_loc_entry.insert(0, "CURRENT OFFICE LOCATION PLACEHOLDER")
     check_user_database_button.destroy()
     update_user_database_button = Button(admin_user_edit_frame, padx=35, pady=0, text="Push To Database",
-                                         background="#f2f2f2")
+                                         background="#f2f2f2", command=pop_up_to_confirm)
     update_user_database_button.grid(row=7, column=0, columnspan=2, pady=20)
 
+def pop_up_to_confirm():
+    messagebox.askyesno("ShipperStatusPlus - Add User To Database Question", "Are you sure that you want to update this user's profile in the database?")
 
 query_user_id_entry.grid(row=1, column=1)
 update_user_first_name_entry.grid(row=2, column=1)
