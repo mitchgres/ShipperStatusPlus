@@ -19,6 +19,7 @@ logo_image = ImageTk.PhotoImage(image_resized)
 logo_image_label = Label(admin_user_edit_frame, image=logo_image)
 title_label = Label(admin_user_edit_frame, text="Admin User Information Update", font='Helvetica 18 bold',
                     background="#31117A", foreground="#f2f2f2")
+logo_image_label.grid(row=0, columnspan=2, column=0)
 
 query_user_id_label = Label(text_box_frame, text="Please Enter User's Current ID:", pady=7, background="#31117A",
                             foreground="#f2f2f2", font='Helvetica 9 bold')
