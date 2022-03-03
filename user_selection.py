@@ -24,6 +24,7 @@ user_radio_input.set("Exit")
 
 check_package_status_radio = Radiobutton(user_selection_frame, text="Check Package Status", variable=user_radio_input, value="Check", width=50, pady=7, background="#31117A", foreground="#f2f2f2", font='Helvetica 11 bold')
 update_package_status_radio = Radiobutton(user_selection_frame, text="Update Package Status", variable=user_radio_input, value="Status", width=50, pady=7, background="#31117A", foreground="#f2f2f2", font='Helvetica 11 bold')
+add_new_package_radio = Radiobutton(user_selection_frame, text="Add New Package", variable=user_radio_input, value="Add", width=50, pady=7, background="#31117A", foreground="#f2f2f2", font='Helvetica 11 bold')
 exit_application_radio = Radiobutton(user_selection_frame, text="Exit Application", variable=user_radio_input, value="Exit", width=50, pady=7, background="#31117A", foreground="#f2f2f2", font='Helvetica 11 bold')
 
 submit_button = Button(user_selection_frame, text="Submit", padx=35, pady=0, background="#f2f2f2")
@@ -34,7 +35,8 @@ user_id_information.grid(row=2, column=0)
 instruct_text.grid(row=3, column=0)
 check_package_status_radio.grid(row=4, column=0)
 update_package_status_radio.grid(row=5, column=0)
-exit_application_radio.grid(row=6, column=0)
-submit_button.grid(row=7, column=0, pady=15)
+add_new_package_radio.grid(row=6, column=0)
+exit_application_radio.grid(row=7, column=0)
+submit_button.grid(row=8, column=0, pady=15)
 
 root_widget_login.mainloop()
