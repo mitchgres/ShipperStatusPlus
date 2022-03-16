@@ -18,6 +18,6 @@ Currently, Working Modules:
 
 Future Plans: You can see the flowchart of the operation of the application 
 here which outline the actual logic of the finished application. 
-https://drive.google.com/file/d/1iSB_ZO7GiJNiQcerLc9AYQmqi0NcJyp0/view?usp=sharing
+https://lucid.app/lucidchart/1c68a878-c16f-4781-af27-cfaab33d8fb3/edit?invitationId=inv_a8bd7874-d13f-49e0-a221-93619ac05f40
 
 Thank you for your interest in ShipperStatusPlus.
